@@ -1,0 +1,135 @@
+{
+  "benchmarks": [
+    {
+      "Rank": 1,
+      "Model": "Random Forest Regressor",
+      "R2": 0.9778,
+      "RMSE": 595.84,
+      "MAE": 308.91,
+      "Status": "Selected Best"
+    },
+    {
+      "Rank": 2,
+      "Model": "Polynomial Regression (Degree 2)",
+      "R2": 0.9725,
+      "RMSE": 662.58,
+      "MAE": 392.57,
+      "Status": "Top 2 Runner-up"
+    },
+    {
+      "Rank": 3,
+      "Model": "KNN Regressor",
+      "R2": 0.9651,
+      "RMSE": 746.78,
+      "MAE": 376.49,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 4,
+      "Model": "Decision Tree Regressor",
+      "R2": 0.964,
+      "RMSE": 758.25,
+      "MAE": 403.71,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 5,
+      "Model": "Gradient Boosting Regressor",
+      "R2": 0.9482,
+      "RMSE": 909.35,
+      "MAE": 509.13,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 6,
+      "Model": "Linear Regression",
+      "R2": 0.928,
+      "RMSE": 1072.26,
+      "MAE": 708.1,
+      "Status": "Baseline"
+    },
+    {
+      "Rank": 7,
+      "Model": "Ridge Regression",
+      "R2": 0.928,
+      "RMSE": 1072.28,
+      "MAE": 708.02,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 8,
+      "Model": "Lasso Regression",
+      "R2": 0.928,
+      "RMSE": 1072.29,
+      "MAE": 707.72,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 9,
+      "Model": "Support Vector Regressor",
+      "R2": 0.9116,
+      "RMSE": 1188.16,
+      "MAE": 629.12,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 10,
+      "Model": "ElasticNet Regression",
+      "R2": 0.8961,
+      "RMSE": 1288.1,
+      "MAE": 861.2,
+      "Status": "Evaluated"
+    }
+  ],
+  "cross_val": [
+    {
+      "Model": "Random Forest Regressor",
+      "Mean CV R2": 0.9774,
+      "Std CV R2": 0.0004,
+      "Folds": 5,
+      "Selection": "Best Model"
+    },
+    {
+      "Model": "Polynomial Regression (Degree 2)",
+      "Mean CV R2": 0.9707,
+      "Std CV R2": 0.0025,
+      "Folds": 5,
+      "Selection": "Second Best"
+    }
+  ],
+  "tuning": [
+    {
+      "Model": "Random Forest Regressor",
+      "Tuned Parameters": "max_depth=None, min_samples_leaf=1, n_estimators=200",
+      "Baseline Test R2": 0.9778,
+      "Tuned Test R2": 0.9805,
+      "Test Improvement": "+0.0027",
+      "Baseline 3-Fold CV R2": 0.9769,
+      "Tuned 3-Fold CV R2": 0.9798,
+      "CV Improvement": "+0.0029"
+    },
+    {
+      "Model": "Ridge Regression",
+      "Tuned Parameters": "alpha=10 (vs baseline alpha=1.0)",
+      "Baseline Test R2": 0.92803,
+      "Tuned Test R2": 0.927986,
+      "Test Improvement": "-0.000045",
+      "Baseline 3-Fold CV R2": 0.927211,
+      "Tuned 3-Fold CV R2": 0.927213,
+      "CV Improvement": "+0.000002"
+    }
+  ],
+  "best_model_name": "Random Forest Regressor",
+  "sample_row": {
+    "Carat(Weight of Daimond)": 1.0,
+    "Cut(Quality)": "Very Good",
+    "Color": "I",
+    "Clarity": "SI2",
+    "Depth": 62.6,
+    "Table": 57.0,
+    "X(length)": 6.37,
+    "Y(width)": 6.4,
+    "Z(Depth)": 4.0,
+    "Volume": 163.072
+  }
+}

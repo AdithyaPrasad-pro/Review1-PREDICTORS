@@ -1,0 +1,161 @@
+{
+  "benchmarks": [
+    {
+      "Rank": 1,
+      "Model": "Random Forest",
+      "Accuracy": 0.8877,
+      "Precision": 0.8874,
+      "Recall": 0.8877,
+      "F1 Score": 0.8861,
+      "ROC-AUC": 0.94,
+      "Status": "Selected Best (CV & Test)"
+    },
+    {
+      "Rank": 2,
+      "Model": "MLP (Neural Network)",
+      "Accuracy": 0.8846,
+      "Precision": 0.8845,
+      "Recall": 0.8846,
+      "F1 Score": 0.8826,
+      "ROC-AUC": 0.9386,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 3,
+      "Model": "SVM (RBF Kernel)",
+      "Accuracy": 0.8796,
+      "Precision": 0.8825,
+      "Recall": 0.8796,
+      "F1 Score": 0.8761,
+      "ROC-AUC": 0.9256,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 4,
+      "Model": "Bagging (Decision Tree)",
+      "Accuracy": 0.8775,
+      "Precision": 0.8773,
+      "Recall": 0.8775,
+      "F1 Score": 0.8754,
+      "ROC-AUC": 0.9359,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 5,
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.8767,
+      "Precision": 0.8781,
+      "Recall": 0.8767,
+      "F1 Score": 0.8736,
+      "ROC-AUC": 0.9276,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 6,
+      "Model": "AdaBoost",
+      "Accuracy": 0.847,
+      "Precision": 0.8493,
+      "Recall": 0.847,
+      "F1 Score": 0.8415,
+      "ROC-AUC": 0.8839,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 7,
+      "Model": "KNN",
+      "Accuracy": 0.8425,
+      "Precision": 0.8464,
+      "Recall": 0.8425,
+      "F1 Score": 0.8359,
+      "ROC-AUC": 0.8832,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 8,
+      "Model": "Decision Tree",
+      "Accuracy": 0.8207,
+      "Precision": 0.8208,
+      "Recall": 0.8207,
+      "F1 Score": 0.8208,
+      "ROC-AUC": 0.8038,
+      "Status": "Evaluated"
+    },
+    {
+      "Rank": 9,
+      "Model": "Logistic Regression",
+      "Accuracy": 0.8049,
+      "Precision": 0.8026,
+      "Recall": 0.8049,
+      "F1 Score": 0.7988,
+      "ROC-AUC": 0.8462,
+      "Status": "Baseline"
+    },
+    {
+      "Rank": 10,
+      "Model": "Naive Bayes (Gaussian)",
+      "Accuracy": 0.7237,
+      "Precision": 0.7142,
+      "Recall": 0.7237,
+      "F1 Score": 0.7134,
+      "ROC-AUC": 0.7577,
+      "Status": "Evaluated"
+    }
+  ],
+  "cross_val": [
+    {
+      "Model": "Random Forest",
+      "Mean 5-fold CV Weighted F1": 0.8745,
+      "Selection": "Highest CV Score (Selected Model)"
+    },
+    {
+      "Model": "Bagging (Decision Tree)",
+      "Mean 5-fold CV Weighted F1": 0.8739,
+      "Selection": "Second Best CV"
+    },
+    {
+      "Model": "MLP (Neural Network)",
+      "Mean 5-fold CV Weighted F1": 0.8682,
+      "Selection": "Third Best CV"
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Mean 5-fold CV Weighted F1": 0.8646,
+      "Selection": "Fourth Best CV"
+    },
+    {
+      "Model": "SVM (RBF Kernel)",
+      "Mean 5-fold CV Weighted F1": 0.8598,
+      "Selection": "Top 5 CV"
+    }
+  ],
+  "tuning": [
+    {
+      "Model": "Random Forest Classifier",
+      "Best Hyperparameters": "{'max_depth': 20, 'min_samples_leaf': 1, 'n_estimators': 200}",
+      "CV Weighted F1 (Best)": 0.8749,
+      "Baseline Test Accuracy": 0.8877,
+      "Tuned Test Accuracy": 0.8883,
+      "Baseline Test Weighted F1": 0.8861,
+      "Tuned Test Weighted F1": 0.8864,
+      "Documented Improvement": "+0.0006 Accuracy, +0.0003 Weighted F1"
+    }
+  ],
+  "best_model_name": "Random Forest",
+  "classes": [
+    "g",
+    "h"
+  ],
+  "sample_row": {
+    "fLength": 24.7717,
+    "fWidth": 10.5539,
+    "fSize": 2.3683,
+    "fConc": 0.4711,
+    "fConc1": 0.2762,
+    "fAsym": 6.0089,
+    "fM3Long": 19.2892,
+    "fM3Trans": 7.2154,
+    "fAlpha": 1.094,
+    "fDist": 113.672,
+    "fConcDiff": 0.19490000000000002
+  }
+}
